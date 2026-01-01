@@ -28,7 +28,7 @@ jobs:
       id: meta
       with:
         images: |
-           tomma1/docker
+           ghcr.io/${{ github.repository }}
     - name: Build and push
       uses: docker/build-push-action@v6
       with:
